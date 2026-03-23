@@ -1,5 +1,7 @@
 var bakeryLabels = ["Crossiants","Baguettes","Cupcakes", "Pretzels"];
 
+var priceLables = ["$1.99","$4.99","$2.99", "$1.99"];
+
 var xPositions = [70, 90];
 var yPositions = [230, 235];
 
@@ -29,6 +31,7 @@ setup = function() {
    textSize(random(10, 30))
    text('🥨', i, 320);
    text('🥨', i, 304);
+  }
 
   // If you want to know what each thing is 
   textSize(15);
@@ -36,7 +39,12 @@ setup = function() {
   text(bakeryLabels[1], 70, 185);
   text(bakeryLabels[2], 70, 260);
   text(bakeryLabels[3], 70, 345);
-}
+
+  text(priceLables[0], 300, 105);
+  text(priceLables[1], 300, 185);
+  text(priceLables[2], 300, 260);
+  text(priceLables[3], 300, 345);
+
 }
 
 draw = function(){   
